@@ -39,6 +39,8 @@
 
     </style>
     <script src="node_modules/marked/marked.min.js"></script>
+    <script src="node_modules/highlightjs/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
 
@@ -47,6 +49,14 @@
 </div>
 
 <script>
+
+    marked.setOptions({
+        highlight: function (code, lang, callback) {
+            return hljs.highlightAuto(code).value;
+        }
+    });
+
+
     var top = window.top;
     function Editor(input, preview) {
         this.update = function () {
