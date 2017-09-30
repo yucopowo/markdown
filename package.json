@@ -1,0 +1,27 @@
+{
+  "name": "markdown",
+  "version": "1.0.0",
+  "description": "github markdown",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yucopowo/markdown.git"
+  },
+  "keywords": [
+    "markdown"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yucopowo/markdown/issues"
+  },
+  "homepage": "https://github.com/yucopowo/markdown#readme",
+  "dependencies": {
+    "github-markdown-css": "^2.8.0",
+    "markdown": "^0.5.0",
+    "marked": "^0.3.6"
+  }
+}
